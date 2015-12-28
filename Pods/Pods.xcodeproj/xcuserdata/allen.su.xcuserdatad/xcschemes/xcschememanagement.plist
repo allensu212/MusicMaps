@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Parse.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MusicMaps.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,11 +27,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>50538ABA8F3D1E32738820A05920F8B7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>511B536F0DE06D9C3BD65397A91990C0</key>
 		<dict>
 			<key>primary</key>
@@ -33,11 +38,6 @@
 			<true/>
 		</dict>
 		<key>708E01B006A9F88B3C13711562282B5E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CD83461B10731224D51450482FD4B080</key>
 		<dict>
 			<key>primary</key>
 			<true/>
