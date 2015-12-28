@@ -3,6 +3,7 @@ use_frameworks!
 
 target 'MusicMaps' do
 pod 'PureLayout'
+pod 'Parse'
 end
 
 target 'MusicMapsTests' do

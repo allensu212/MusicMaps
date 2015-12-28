@@ -84,8 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-MusicMaps/Bolts.framework"
+  install_framework "Pods-MusicMaps/Parse.framework"
   install_framework "Pods-MusicMaps/PureLayout.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-MusicMaps/Bolts.framework"
+  install_framework "Pods-MusicMaps/Parse.framework"
   install_framework "Pods-MusicMaps/PureLayout.framework"
 fi
