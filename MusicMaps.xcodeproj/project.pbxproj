@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C4DC55FFB86C948484C5E81 /* Pods_MusicMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572D4E4A47DEC90125EF8984 /* Pods_MusicMaps.framework */; };
 		85419F4D1C315285003A379F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85419F4C1C315285003A379F /* AppDelegate.swift */; };
-		85419F4F1C315285003A379F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85419F4E1C315285003A379F /* ViewController.swift */; };
+		85419F4F1C315285003A379F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85419F4E1C315285003A379F /* MasterViewController.swift */; };
 		85419F521C315285003A379F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85419F501C315285003A379F /* Main.storyboard */; };
 		85419F541C315285003A379F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85419F531C315285003A379F /* Assets.xcassets */; };
 		85419F571C315285003A379F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85419F551C315285003A379F /* LaunchScreen.storyboard */; };
@@ -38,7 +38,7 @@
 		572D4E4A47DEC90125EF8984 /* Pods_MusicMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85419F491C315285003A379F /* MusicMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85419F4C1C315285003A379F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		85419F4E1C315285003A379F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85419F4E1C315285003A379F /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		85419F511C315285003A379F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85419F531C315285003A379F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85419F561C315285003A379F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -113,11 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				85419F4C1C315285003A379F /* AppDelegate.swift */,
-				85419F4E1C315285003A379F /* ViewController.swift */,
-				85419F501C315285003A379F /* Main.storyboard */,
+				85419F4E1C315285003A379F /* MasterViewController.swift */,
 				85419F531C315285003A379F /* Assets.xcassets */,
-				85419F551C315285003A379F /* LaunchScreen.storyboard */,
-				85419F581C315285003A379F /* Info.plist */,
+				85DD0A8D1C31556A005E2969 /* Support Files */,
 			);
 			path = MusicMaps;
 			sourceTree = "<group>";
@@ -138,6 +136,16 @@
 				85419F6E1C315285003A379F /* Info.plist */,
 			);
 			path = MusicMapsUITests;
+			sourceTree = "<group>";
+		};
+		85DD0A8D1C31556A005E2969 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				85419F501C315285003A379F /* Main.storyboard */,
+				85419F551C315285003A379F /* LaunchScreen.storyboard */,
+				85419F581C315285003A379F /* Info.plist */,
+			);
+			name = "Support Files";
 			sourceTree = "<group>";
 		};
 		C10FC27016E9AB63187C86D5 /* Pods */ = {
@@ -331,7 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85419F4F1C315285003A379F /* ViewController.swift in Sources */,
+				85419F4F1C315285003A379F /* MasterViewController.swift in Sources */,
 				85419F4D1C315285003A379F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
