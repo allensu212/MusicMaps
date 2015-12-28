@@ -7,16 +7,26 @@
 //
 
 import UIKit
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        parseSetup(launchOptions)
+        let navigationController = UINavigationController(rootViewController: SignUpViewController())
+        window?.rootViewController = navigationController
+        
         return true
+    }
+    
+    func parseSetup(launchOptions: [NSObject: AnyObject]?){
+        Parse.enableLocalDatastore()
+        Parse.setApplicationId("ObkKvF6Db4pUKg7UThkJop99PPxUsK6xl2cjRg8n", clientKey: "kP62gcJBXIF7GN3Yur426v5p63zRYbArJYeR3jtf")
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
     }
 
     func applicationWillResignActive(application: UIApplication) {
