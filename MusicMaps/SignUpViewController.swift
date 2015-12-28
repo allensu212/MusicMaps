@@ -35,6 +35,7 @@ class SignUpViewController: UIViewController {
         passwordTextField.textAlignment = .Center
         signUpButton.setTitle("Sign Up", forState: .Normal)
         signUpButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        signUpButton.addTarget(self, action: "signUp", forControlEvents: .TouchUpInside)
         view.addSubview(usernameTextField)
         view.addSubview(passwordTextField)
         view.addSubview(signUpButton)
@@ -69,6 +70,11 @@ class SignUpViewController: UIViewController {
             
         }
         super.updateViewConstraints()
+    }
+    
+    // MARK: IBAction
+    
+    func signUp(){
     }
     
 }
