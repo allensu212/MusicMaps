@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C4DC55FFB86C948484C5E81 /* Pods_MusicMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572D4E4A47DEC90125EF8984 /* Pods_MusicMaps.framework */; };
 		85419F4D1C315285003A379F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85419F4C1C315285003A379F /* AppDelegate.swift */; };
 		85419F4F1C315285003A379F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85419F4E1C315285003A379F /* ViewController.swift */; };
 		85419F521C315285003A379F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85419F501C315285003A379F /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		572D4E4A47DEC90125EF8984 /* Pods_MusicMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85419F491C315285003A379F /* MusicMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85419F4C1C315285003A379F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85419F4E1C315285003A379F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		85419F681C315285003A379F /* MusicMapsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicMapsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85419F6C1C315285003A379F /* MusicMapsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicMapsUITests.swift; sourceTree = "<group>"; };
 		85419F6E1C315285003A379F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B1C218C3DDF90A9EC9ADA61 /* Pods-MusicMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicMaps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicMaps/Pods-MusicMaps.debug.xcconfig"; sourceTree = "<group>"; };
+		E8A94DF309539DE5AB6AD01F /* Pods-MusicMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicMaps.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicMaps/Pods-MusicMaps.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C4DC55FFB86C948484C5E81 /* Pods_MusicMaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03B5C474938D76183E36D2BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				572D4E4A47DEC90125EF8984 /* Pods_MusicMaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		85419F401C315285003A379F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				85419F601C315285003A379F /* MusicMapsTests */,
 				85419F6B1C315285003A379F /* MusicMapsUITests */,
 				85419F4A1C315285003A379F /* Products */,
+				C10FC27016E9AB63187C86D5 /* Pods */,
+				03B5C474938D76183E36D2BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = MusicMapsUITests;
 			sourceTree = "<group>";
 		};
+		C10FC27016E9AB63187C86D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B1C218C3DDF90A9EC9ADA61 /* Pods-MusicMaps.debug.xcconfig */,
+				E8A94DF309539DE5AB6AD01F /* Pods-MusicMaps.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85419F711C315285003A379F /* Build configuration list for PBXNativeTarget "MusicMaps" */;
 			buildPhases = (
+				48DA42870C8A8252C9D1767F /* Check Pods Manifest.lock */,
 				85419F451C315285003A379F /* Sources */,
 				85419F461C315285003A379F /* Frameworks */,
 				85419F471C315285003A379F /* Resources */,
+				9BB2FFAE6579C36C86E4B65D /* Embed Pods Frameworks */,
+				5D5FC067CB20FCEA4DD240B7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48DA42870C8A8252C9D1767F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5D5FC067CB20FCEA4DD240B7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusicMaps/Pods-MusicMaps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BB2FFAE6579C36C86E4B65D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusicMaps/Pods-MusicMaps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		85419F451C315285003A379F /* Sources */ = {
@@ -395,6 +470,7 @@
 		};
 		85419F721C315285003A379F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B1C218C3DDF90A9EC9ADA61 /* Pods-MusicMaps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MusicMaps/Info.plist;
@@ -406,6 +482,7 @@
 		};
 		85419F731C315285003A379F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A94DF309539DE5AB6AD01F /* Pods-MusicMaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MusicMaps/Info.plist;
@@ -482,6 +559,7 @@
 				85419F731C315285003A379F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85419F741C315285003A379F /* Build configuration list for PBXNativeTarget "MusicMapsTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +568,7 @@
 				85419F761C315285003A379F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85419F771C315285003A379F /* Build configuration list for PBXNativeTarget "MusicMapsUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +577,7 @@
 				85419F791C315285003A379F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

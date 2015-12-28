@@ -1,0 +1,6 @@
+framework module Pods_MusicMaps {
+  umbrella header "Pods-MusicMaps-umbrella.h"
+
+  export *
+  module * { export * }
+}
