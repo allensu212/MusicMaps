@@ -8,6 +8,7 @@
 
 import UIKit
 import PureLayout
+import Parse
 
 let musicCellIdentifier = "musicCell"
 
@@ -21,6 +22,22 @@ class MasterViewController: UIViewController {
         super.viewDidLoad()
         setupViews()
         setupConstraints()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        validateUser()
+    }
+    
+    // MARK: UserValidation
+    
+    func validateUser(){
+        if (PFUser.currentUser() == nil) {
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                let signUpController = SignUpViewController()
+                self.presentViewController(signUpController, animated: true, completion: nil)
+            })
+        }
     }
     
     // MARK: UISetup

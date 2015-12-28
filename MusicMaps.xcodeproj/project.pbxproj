@@ -26,6 +26,7 @@
 		85DD0A9F1C3161B7005E2969 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DD0A9E1C3161B7005E2969 /* libz.tbd */; };
 		85DD0AA11C3161C5005E2969 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DD0AA01C3161C5005E2969 /* libsqlite3.tbd */; };
 		85DD0AA31C3162BA005E2969 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DD0AA21C3162BA005E2969 /* SignUpViewController.swift */; };
+		85DD0AA61C31646F005E2969 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DD0AA51C31646F005E2969 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		85DD0A9E1C3161B7005E2969 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		85DD0AA01C3161C5005E2969 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		85DD0AA21C3162BA005E2969 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		85DD0AA51C31646F005E2969 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8B1C218C3DDF90A9EC9ADA61 /* Pods-MusicMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicMaps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicMaps/Pods-MusicMaps.debug.xcconfig"; sourceTree = "<group>"; };
 		E8A94DF309539DE5AB6AD01F /* Pods-MusicMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicMaps.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicMaps/Pods-MusicMaps.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,7 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				85419F4C1C315285003A379F /* AppDelegate.swift */,
-				85DD0AA21C3162BA005E2969 /* SignUpViewController.swift */,
+				85DD0AA41C316457005E2969 /* SignUp */,
 				85419F4E1C315285003A379F /* MasterViewController.swift */,
 				85DD0A8D1C31556A005E2969 /* Support Files */,
 			);
@@ -189,6 +191,15 @@
 				85419F581C315285003A379F /* Info.plist */,
 			);
 			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		85DD0AA41C316457005E2969 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				85DD0AA21C3162BA005E2969 /* SignUpViewController.swift */,
+				85DD0AA51C31646F005E2969 /* LoginViewController.swift */,
+			);
+			name = SignUp;
 			sourceTree = "<group>";
 		};
 		C10FC27016E9AB63187C86D5 /* Pods */ = {
@@ -382,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85DD0AA61C31646F005E2969 /* LoginViewController.swift in Sources */,
 				85DD0AA31C3162BA005E2969 /* SignUpViewController.swift in Sources */,
 				85419F4F1C315285003A379F /* MasterViewController.swift in Sources */,
 				85419F4D1C315285003A379F /* AppDelegate.swift in Sources */,

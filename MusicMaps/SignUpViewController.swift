@@ -22,7 +22,7 @@ class SignUpViewController: UIViewController {
     // MARK: UISetup
     
     func setupViews() {
-        view.backgroundColor = UIColor.whiteColor()
+        view.backgroundColor = UIColor.lightGrayColor()
     }
     
     // MARK: ServerCall
