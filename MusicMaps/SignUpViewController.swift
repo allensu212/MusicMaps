@@ -75,6 +75,15 @@ class SignUpViewController: UIViewController {
     // MARK: IBAction
     
     func signUp(){
+        let username = usernameTextField.text
+        let password = passwordTextField.text
+        let newUser = PFUser()
+        newUser.username = username
+        newUser.password = password
+        
+        newUser.signUpInBackgroundWithBlock { (succeed, error) -> Void in
+            print("succeed: \(succeed)")
+        }
     }
     
 }
